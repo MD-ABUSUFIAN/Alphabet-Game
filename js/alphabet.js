@@ -2,6 +2,8 @@ const names=document.getElementById('name');
 const password=document.getElementById('password');
 const message=document.getElementById('message');
 const displays=document.getElementById('display');
+const lifeCounts=document.getElementById('lifeCount');
+const scoreCounts=document.getElementById('scoreCount');
 
 
 
@@ -12,7 +14,8 @@ const displays=document.getElementById('display');
 
 let userName="";
 // security page function 
-const goGame= function(){
+function login(){
+    console.log("go game click")
     if(password.value=="MERN-2404"){
         userName=names.value;
         names.value="";
@@ -27,7 +30,22 @@ const goGame= function(){
 }
 
 
-// player key press function 
+
+
+function continueGame(){
+// random alphabet 
+const randomAlpha=randomAlphaBet();
+// display this alphabet section 
+ displays.innerText=randomAlpha;
+ addBackgroundColor(randomAlpha)
+
+}
+
+
+function playNow(){
+    shows('playGround','visually-hidden')
+    hidden('playHome','visually-hidden')
+    // player key press function 
 function handleKeyBoard(event){
     const playerPress=event.key;
     const displayAlpha=displays.innerText;
@@ -47,29 +65,16 @@ function handleKeyBoard(event){
     
     document.addEventListener('keyup',handleKeyBoard)
 
-
-function continueGame(){
-// random alphabet 
-const randomAlpha=randomAlphaBet();
-// display this alphabet section 
- displays.innerText=randomAlpha;
- addBackgroundColor(randomAlpha)
-
-}
-
-
-function playNow(){
-    shows('playGround','visually-hidden')
-    hidden('playHome','visually-hidden')
-    continueGame()
-    // play()
+  
 }
 function againGame(){
     shows('playGround','visually-hidden')
-    hidden('playHome','visually-hidden')
+    hidden('result','visually-hidden')
+    hidden('security','visually-hidden')
+    lifeCounts.innerText=10;
+    scoreCounts.innerText="";
     continueGame()
 }
-
 // const continueGame=function(){
 //     document.addEventListener('keyup',function(e){
 //         document.getElementById(e.key).classList.remove('bg-danger','text-warning','fs-5');

@@ -35,6 +35,19 @@
 .playCard{
     position: relative;
 }
+.display-top{
+    position: absolute;
+    top: 11%;
+    left: 0%;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    text-shadow: 5px 2px 7px rgba(134, 3, 3, 0.93);
+    border-radius: 20px ;
+    text-align: center;
+}
 .displayText{
     position: absolute;
     left:50%;

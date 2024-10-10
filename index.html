@@ -55,7 +55,7 @@
                                         <input class="p-3 w-75 rounded-pill bg-transparent text-white fs-4" type="password" name="password" id="password" placeholder="PLZ TYPE PASSWORD: MERN2404" required>
                                 </div>
                                 <br>
-                            <button onclick="goGame()" class="playBtn bg-transparent border-1 border-primary text-center px-4 py-3 rounded-pill fs-3 fw-bolder text-warning ">
+                            <button onclick="login()" class="playBtn bg-transparent border-1 border-primary text-center px-4 py-3 rounded-pill fs-3 fw-bolder text-warning ">
                                  <i class="fa-duotone fa-solid fa-lock-keyhole text-white playIcon"></i> LOGIN
                                  <i class="fa-duotone fa-solid fa-lock-keyhole-open text-danger playIcon"></i>
                             </button>
@@ -65,7 +65,7 @@
             </section>
       <!-- Home Screen MarkUp  -->
       <!-- Home Screen MarkUp  -->
-            <section id="playHome" class="">
+            <section id="playHome" class="visually-hidden">
                 <div class="container ">
                     <div class="playGroundWrapper d-flex flex-column justify-content-center align-items-center vh-100 ">
                         <div class="homeCard text-center">
@@ -84,7 +84,7 @@
             </section>
       <!-- Home Screen MarkUp  -->
       <!-- Play Ground Screen MarkUp  -->
-            <section id="playGround" class="visually-hidden">
+            <section id="playGround" class="">
                 <div class="container">
                     <div class="playGroundWrapper  pt-5 pt-md-0 pt-lg-0  w-75  mx-auto vh-100">
                         
@@ -92,6 +92,7 @@
                             <picture>
                                 <img class="img-fluid w-100 text-center" src="./images/display.png" alt="./images/display.png" style="max-height:550px;">
                             </picture>
+                                 <p class="display-top">Don't Watch Keyboard While Playing-----</p>
                             
                                 <h1 id="display" class="displayText text-warning display-1 fw-bolder text-uppercase">A</h1>
  
@@ -141,7 +142,7 @@
                                 <button type="button" class=" bg-transparent text-white rounded-pill  position-relative w-auto p-3 fs-4">
                                     <i class="fa-sharp fa-solid fa-hands-holding-diamond text-warning"></i>
                                     LIFE
-                                    <span id="lifeCount" class="position-absolute top-0  start-0 shadow translate-middle badge rounded-pill bg-light fs-3 p-2  fw-bolder text-primary visible" >
+                                    <span id="lifeCount" class="position-absolute top-0  start-0 shadow translate-middle badge rounded-pill bg-light fs-3 p-2  fw-bolder text-primary " >
                                       10
                                      
                                     </span>

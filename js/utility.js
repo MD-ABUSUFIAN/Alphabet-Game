@@ -74,12 +74,15 @@ const scoreCount=document.getElementById('scoreCount');
 // total result function 
 const totalScore=document.getElementById('totalScore');
 
+
 let scored=0
 let oldLife=10;
+// score count function 
 function score(){
     scoreCount.innerText=scored+=1;
     continueGame()
 }
+// Life Remove function 
 function lifeRemove(){
     if(oldLife>0){
         lifeCount.innerText=oldLife-=1
@@ -88,6 +91,7 @@ function lifeRemove(){
         totalScore.innerText=scoreCount.innerText
         shows('result','visually-hidden')
         hidden('playGround','visually-hidden')
+        hidden('security','visually-hidden')
         console.log("your life is finish")
     }
     
