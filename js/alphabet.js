@@ -1,7 +1,6 @@
 const names=document.getElementById('name');
 const password=document.getElementById('password');
-const message=document.getElementById('message')
-
+const message=document.getElementById('message');
 
 let userName="";
 const goGame= function(){
@@ -18,10 +17,22 @@ const goGame= function(){
     }
 }
 
-const playGame=function(){
-    shows('playHome','visually-hidden')
-    hidden('security','visually-hidden')
+const playNow=function(){
+    shows('playGround','visually-hidden')
+    hidden('playHome','visually-hidden')
+    playGround()
 }
+
+
+
+
+
+
+
+
+
+
+
 const againGame=function(){
     console.log("play again button is working");
 }
