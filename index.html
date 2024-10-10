@@ -40,7 +40,7 @@
   <body>
     <main id="main">
       <!-- Home Screen MarkUp  -->
-            <section id="security" class="">
+            <section id="security" class="visually-hidden">
                 <div class="container ">
                     <div class="playGroundWrapper d-flex flex-column justify-content-center align-items-center vh-100 ">
                         <div class="homeCard text-center">
@@ -65,7 +65,7 @@
             </section>
       <!-- Home Screen MarkUp  -->
       <!-- Home Screen MarkUp  -->
-            <section id="playHome" class="visually-hidden">
+            <section id="playHome" class="">
                 <div class="container ">
                     <div class="playGroundWrapper d-flex flex-column justify-content-center align-items-center vh-100 ">
                         <div class="homeCard text-center">
@@ -86,15 +86,17 @@
       <!-- Play Ground Screen MarkUp  -->
             <section id="playGround" class="visually-hidden">
                 <div class="container">
-                    <div class="playGroundWrapper pt-5 pt-md-0 pt-lg-0  w-75  mx-auto vh-100">
+                    <div class="playGroundWrapper  pt-5 pt-md-0 pt-lg-0  w-75  mx-auto vh-100">
+                        
                         <div class="playCard">
                             <picture>
                                 <img class="img-fluid w-100 text-center" src="./images/display.png" alt="./images/display.png" style="max-height:550px;">
                             </picture>
                             
-                                <h1 id="display" class="displayText text-warning display-1 fw-bolder text-uppercase"></h1>
+                                <h1 id="display" class="displayText text-warning display-1 fw-bolder text-uppercase">A</h1>
  
                             <div class="keyBoardWrapper" >
+                              
                                    <div class="keyboardLine d-flex justify-content-evenly gap-1 gap-md-0 gap-lg-0  align-items-center ">
                                    <div id="q" class="keyBtn">Q</div>
                                    <div id="w" class="keyBtn">W</div>
@@ -131,10 +133,35 @@
 
                             </div>
                             
-                           
+                          
+                        </div>
+
+                        <div class="lifeScoreWrapper d-flex justify-content-between align-items-center text-center mt-5">
+                            <div  class=" w-50">
+                                <button type="button" class=" bg-transparent text-white rounded-pill  position-relative w-auto p-3 fs-4">
+                                    <i class="fa-sharp fa-solid fa-hands-holding-diamond text-warning"></i>
+                                    LIFE
+                                    <span id="lifeCount" class="position-absolute top-0  start-0 shadow translate-middle badge rounded-pill bg-light fs-3 p-2  fw-bolder text-primary visible" >
+                                      10
+                                     
+                                    </span>
+                                  </button>
+                            </div>
+                    
+                           <div  class="w-50">
+                                <button type="button" class=" bg-transparent text-primary fw-bolder rounded-pill  position-relative w-auto p-3 fs-4">
+                                    <i class="fa-sharp fa-regular fa-hourglass-clock text-danger"></i>
+                                    SCORE
+                                    <span id="scoreCount" class="position-absolute top-0  start-100 shadow translate-middle badge rounded-pill bg-light fs-3 px-3 fw-bolder text-danger visible" >
+                                      0
+                                    </span>
+                                  </button>
+                            </div>
+                            
                         </div>
 
                     </div>
+                    
                 </div>
             </section>
       <!-- Play Ground Screen MarkUp  -->

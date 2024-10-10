@@ -1,8 +1,17 @@
 const names=document.getElementById('name');
 const password=document.getElementById('password');
 const message=document.getElementById('message');
+const displays=document.getElementById('display');
+
+
+
+
+
+
+
 
 let userName="";
+// security page function 
 const goGame= function(){
     if(password.value=="MERN-2404"){
         userName=names.value;
@@ -17,22 +26,59 @@ const goGame= function(){
     }
 }
 
-const playNow=function(){
+
+// player key press function 
+function handleKeyBoard(event){
+    const playerPress=event.key;
+    const displayAlpha=displays.innerText;
+    const lowerCasedisplayAlpha=displayAlpha.toLowerCase();
+    const lowerCasePlayerPress=playerPress.toLowerCase();
+        if(lowerCasePlayerPress===lowerCasedisplayAlpha){
+            removeBackgroundColor(lowerCasePlayerPress)
+            console.log("alpha is mathicng")
+            score()
+        }
+        else{
+            lifeRemove()
+            console.log("alpha is not matching")
+        }
+    
+    }
+    
+    document.addEventListener('keyup',handleKeyBoard)
+
+
+function continueGame(){
+// random alphabet 
+const randomAlpha=randomAlphaBet();
+// display this alphabet section 
+ displays.innerText=randomAlpha;
+ addBackgroundColor(randomAlpha)
+
+}
+
+
+function playNow(){
     shows('playGround','visually-hidden')
     hidden('playHome','visually-hidden')
-    playGround()
+    continueGame()
+    // play()
+}
+function againGame(){
+    shows('playGround','visually-hidden')
+    hidden('playHome','visually-hidden')
+    continueGame()
 }
 
+// const continueGame=function(){
+//     document.addEventListener('keyup',function(e){
+//         document.getElementById(e.key).classList.remove('bg-danger','text-warning','fs-5');
+//        let results=playGround()
+//        console.log(results);
+//        console.log(e.key)
+      
+     
+//     })
+// }
 
 
-
-
-
-
-
-
-
-
-const againGame=function(){
-    console.log("play again button is working");
-}
