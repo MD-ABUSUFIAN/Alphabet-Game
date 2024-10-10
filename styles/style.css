@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+
+}
+#main{
+    background-image: url(/images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height:100vh;
+}
+.playBtn{
+    transition: all linear .3s;
+}
+.playBtn:hover{
+ border: 1px solid rgba(0, 0, 255, 0) !important;
+ background-color: rgba(0, 0, 255, 0.29) !important;
+ color: white !important;
+}
+.playBtn:hover .playIcon{
+    color: red !important;
+   }
+.playIcon{
+    transition: all linear .3s;
+}
+
+
+
+
+/* playGround style  */
+.playCard{
+    position: relative;
+}
+.displayText{
+    position: absolute;
+    left:50%;
+   bottom:55%
+}
+.keyBoardWrapper{
+    max-width: 700px;
+    margin: auto;
+}
+.keyboardLine{
+    padding: 5px;
+}
+.keyBtn{
+   width: 40px;
+   height: 40px;
+   background:white;
+   padding: 5px !important;
+   text-align: center;
+   border-radius: 8px;
+   font-size: 16px;
+   font-weight: 700;
+   box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.372);
+}
+
+
+/* playGround Result Style  */
+.resultCard{
+    width: 600px;
+    background: transparent;
+    border: 1px solid red;
+    margin: auto;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALPHABET GAME</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+      >
+
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <main id="main">
+      <!-- Home Screen MarkUp  -->
+            <section id="security" class="">
+                <div class="container ">
+                    <div class="playGroundWrapper d-flex flex-column justify-content-center align-items-center vh-100 ">
+                        <div class="homeCard text-center">
+                            <picture>
+                                <img class="img-fluid vw-100" src="./images/securityPage.png" alt="/images/homePage.png" style="max-width:600px;max-height:500px;">
+                            </picture>
+                                <div class="inputArea">
+                                        <input class="p-3 w-75 fs-4 text-white rounded-pill bg-transparent" type="text" name="name" id="name" placeholder="YOUR NAME">
+                                        <br>
+                                        <br>
+                                        <input class="p-3 w-75 rounded-pill bg-transparent text-white fs-4" type="password" name="password" id="password" placeholder="PLZ TYPE PASSWORD: MERN2404">
+                                </div>
+                                <br>
+                            <button onclick="goGame()" class="playBtn bg-transparent border-1 border-primary text-center px-4 py-3 rounded-pill fs-3 fw-bolder text-warning "><i
+                                    class="fa-solid fa-gamepad-modern text-white playIcon"></i> LOGIN <i
+                                    class="fa-solid fa-gamepad-modern text-white playIcon"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+      <!-- Home Screen MarkUp  -->
+      <!-- Home Screen MarkUp  -->
+            <section id="playHome" class="visually-hidden">
+                <div class="container ">
+                    <div class="playGroundWrapper d-flex flex-column justify-content-center align-items-center vh-100 ">
+                        <div class="homeCard text-center">
+                            <picture>
+                                <img class="img-fluid vw-100" src="./images/homePage.png" alt="/images/homePage.png" style="max-width:500px;">
+                            </picture>
+                            <h1 class="display-1 text-white fw-bolder text-center ">ALPHA CLASH GAME</h1>
+                            <p class="text-warning fs-4 fw-bolder py-2">Unlesh Your Keyboard kUn-G-fU : CLICK PLAY BUTTON</p>
+                            <button onclick="playGame()" class="playBtn bg-transparent border-1 border-primary text-center px-4 py-3 rounded-pill fs-3 fw-bolder text-primary "><i
+                                    class="fa-solid fa-gamepad-modern text-white playIcon"></i> PLAY NOW <i
+                                    class="fa-solid fa-gamepad-modern text-white playIcon"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+      <!-- Home Screen MarkUp  -->
+      <!-- Play Ground Screen MarkUp  -->
+            <section id="playGround" class="visually-hidden">
+                <div class="container">
+                    <div class="playGroundWrapper pt-5 pt-md-0 pt-lg-0  w-75  mx-auto vh-100">
+                        <div class="playCard">
+                            <picture>
+                                <img class="img-fluid w-100 text-center" src="./images/display.png" alt="./images/display.png" style="max-height:550px;">
+                            </picture>
+                            
+                                <h1 class="displayText text-warning display-1 fw-bolder">Y</h1>
+ 
+                            <div class="keyBoardWrapper" >
+                                   <div class="keyboardLine d-flex justify-content-evenly gap-1 gap-md-0 gap-lg-0  align-items-center ">
+                                   <div class="keyBtn">Q</div>
+                                   <div class="keyBtn">W</div>
+                                   <div class="keyBtn">E</div>
+                                   <div class="keyBtn">R</div>
+                                   <div class="keyBtn">T</div>
+                                   <div class="keyBtn">Y</div>
+                                   <div class="keyBtn">U</div>
+                                   <div class="keyBtn">I</div>
+                                   <div class="keyBtn">O</div>
+                                   <div class="keyBtn">P</div>
+                                </div>
+                                <div class="keyboardLine d-flex justify-content-evenly gap-1 gap-md-0 gap-lg-0  align-items-center ">
+                                    <div class="keyBtn">A</div>
+                                    <div class="keyBtn">S</div>
+                                    <div class="keyBtn">D</div>
+                                    <div class="keyBtn">F</div>
+                                    <div class="keyBtn">G</div>
+                                    <div class="keyBtn">H</div>
+                                    <div class="keyBtn">J</div>
+                                    <div class="keyBtn">K</div>
+                                    <div class="keyBtn">L</div>
+                                 </div>
+                                 <div class="keyboardLine d-flex justify-content-evenly gap-1 gap-md-0 gap-lg-0  align-items-center ">
+                                    <div class="keyBtn">Z</div>
+                                    <div class="keyBtn">X</div>
+                                    <div class="keyBtn">C</div>
+                                    <div class="keyBtn">V</div>
+                                    <div class="keyBtn">B</div>
+                                    <div class="keyBtn">N</div>
+                                    <div class="keyBtn">M</div>
+                                    <div class="keyBtn">/</div>
+                                 </div>
+
+                            </div>
+                            
+                           
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+      <!-- Play Ground Screen MarkUp  -->
+     <!-- Play Result Screen MarkUp  -->
+            <section id="result" class="visually-hidden">
+                <div class="container">
+                    <div class="resultWrapper d-flex text-center  vh-100">
+                        <div class="resultCard py-5 rounded-pill">
+                            <h1 class="text-white fs-1 fw-bolder">SCORE: <span class="text-primary" id="totalScore">14</span></h1>
+                            <button onclick="againGame()" class="playBtn bg-transparent border-1 border-primary text-center px-4 py-3 rounded-pill fs-3 fw-bolder text-warning "><i
+                                class="fa-solid fa-gamepad-modern text-white playIcon"></i> PLAY AGAIN <i class="fa-regular fa-repeat-1 text-danger playIcon"></i>
+                             </button>
+                             <p class="fs-5 fw-bold text-white">Practice Will Make You Pro ------ <span class="text-warning ">MR:BRO <i class="fa-sharp fa-solid fa-person text-danger fs-2"></i></span></p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+      <!-- Play Result Screen MarkUp  -->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/utility.js"></script>
+    <script src="./js/alphabet.js"></script>
+  </body>
+</html>
